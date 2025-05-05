@@ -267,6 +267,27 @@ nav {
 }
 
 /* Rodapé
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-align: center;
+  padding: 10px 0; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  z-index: 1000; /* Garante que o rodapé fique sobre outros elementos */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px; /* Reduz o tamanho da fonte em telas menores */
+    padding: 8px 0;
+  }
+}
+
 
 /* Mapas */
 .map-container {
