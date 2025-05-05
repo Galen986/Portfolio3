@@ -19,6 +19,10 @@ margin: 0;
   min-height: 100vh;
 }
 
+.content {
+  flex: 1; /* Garante que o conteúdo ocupe o espaço disponível */
+}
+
 /* Cabeçalhos responsivos */
 h1, h2, h3 {
     font-family: "Courier New", Courier, monospace;
