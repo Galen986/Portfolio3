@@ -139,6 +139,15 @@ footer {
     text-align: center;
     font-size: clamp(12px, 1.5vw, 16px);
     border-radius: 8px;
+    footer {  /*rodapé */
+text-align: center; 
+background-color: #22D4FD;
+color: black;
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 0.875rem;
+padding: 12px; /*distancia entre a palavra e o fundo */
+}
 }
 
 /* Mapas */
