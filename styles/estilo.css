@@ -1,46 +1,44 @@
 /* Reset e responsividade global */
 *, *::before, *::after {
-    box-sizing: border-box;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Define o box-sizing para cálculo correto de margens e padding */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento */
 }
 
 /* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #52D9DB;
-    color: #333;
+    flex-direction: column; /* Alinha em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    min-height: 100vh; /* Altura mínima da página */
+    background-color: #52D9DB; /* Cor de fundo */
+    color: #333; /* Cor do texto */
 }
 
-/* Centraliza o conteúdo principal */
+/* Centraliza conteúdo principal */
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
-/* Estilo do rodapé */
+/* Rodapé */
 footer {
-    
-    padding: 20px 0; /* Adiciona espaçamento interno */
+    background-color: #52D9DB; /* Cor igual ao fundo */
+    color: black; /* Letras pretas */
     text-align: center;
-    width: 100%; /* Largura total */
-    margin-top: 50px; /* Espaçamento acima do rodapé */
+    padding: 20px;
+    width: 100%;
+    margin-top: 50px;
 }
 
-/* Responsividade para rodapé */
+/* Responsividade */
 @media (max-width: 768px) {
     footer p {
         font-size: 14px;
@@ -50,13 +48,12 @@ footer {
 /* Botões centralizados */
 .button-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Permite quebra em linhas em telas menores */
     justify-content: center;
-    align-items: center;
     gap: 10px; /* Espaçamento entre botões */
 }
 
-/* Botões estilo */
+/* Estilo dos botões */
 .link-button {
     display: inline-block;
     text-decoration: none;
@@ -65,7 +62,6 @@ footer {
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 16px;
-    font-family: Arial, sans-serif;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -83,18 +79,12 @@ footer {
 /* Centralizar áudio */
 .audio {
     width: clamp(200px, 50%, 600px);
-    margin: 20px auto; /* Espaçamento automático para centralizar */
+    margin: 20px auto;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Centralizar tudo */
-h1, h2, h3, p, img, iframe {
-    margin: 20px 0;
-}
-
-/* Mapas centralizados */
+/* Mapas */
 .map-container {
     display: flex;
     justify-content: center;
@@ -105,7 +95,7 @@ h1, h2, h3, p, img, iframe {
 
 .map-container iframe {
     width: 80%;
-    height: 80%;
+    height: auto;
     border: none;
     border-radius: 8px;
 }
