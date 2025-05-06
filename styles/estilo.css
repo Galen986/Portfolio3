@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+
 /* Body geral */
 body {
     font-family: Arial, sans-serif;
@@ -153,14 +154,7 @@ nav {
     padding: 0;
 }
 
-/* Body geral */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: clamp(10px, 5vw, 50px);
-    background-color: #52D9DB;
-    color: #333;
-}
+
 
 /* Cabeçalhos responsivos */
 h1, h2, h3 {
@@ -277,14 +271,6 @@ nav {
     padding: clamp(8px, 2vw, 16px) clamp(16px, 4vw, 32px);
     border-radius: 8px;
     transition: background-color 0.3s;
-}
-
-/* Garante que o body ocupe toda a altura da tela */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
 }
 
 /* O conteúdo principal da página ocupa o espaço disponível */
