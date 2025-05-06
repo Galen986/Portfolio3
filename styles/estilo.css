@@ -1,4 +1,4 @@
-/* Reset global */
+/* Reset e responsividade global */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -7,37 +7,27 @@
 
 /* Corpo da página */
 body {
-    font-family: Verdana, sans-serif;
-    background-color: #52D9DB;
-    color: #333;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    background-color: #52D9DB;
+    color: #333;
     text-align: center;
 }
 
 /* Cabeçalhos */
 header h1, header h2 {
-    font-family: "Courier New", Courier, monospace;
-    color: green;
-    margin: 20px 0;
-}
-
-header h1 {
-    font-size: 22px;
-}
-
-header h2 {
-    font-size: 18.5px;
+    margin: 10px 0;
 }
 
 /* Imagem */
 .img {
-    width: 90%;
+    width: 100%;
     max-width: 600px;
-    margin: 20px 0;
     border-radius: 8px;
+    margin: 20px 0;
 }
 
 /* Botões */
@@ -45,12 +35,12 @@ header h2 {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    text-decoration: none;
+    border-radius: 8px;
     background-color: #007BFF;
     color: white;
-    border-radius: 8px;
+    text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .link-button:hover {
@@ -58,38 +48,35 @@ header h2 {
     transform: scale(1.05);
 }
 
-/* Tabela */
-.tabela {
-    width: 90%;
-    margin: 20px 0;
-    border-collapse: collapse;
-}
-
-.tabela th, .tabela td {
-    border: 1px solid #333;
-    padding: 10px;
-    text-align: center;
-}
-
 /* Rodapé */
 footer {
-    margin-top: auto;
-    padding: 10px 0;
+    background-color: #52D9DB;
     color: black;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Botões centralizados */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .img, .map-container iframe {
-        width: 100%;
-    }
-
-    .tabela {
-        font-size: 14px;
+        width: 90%;
     }
 
     .link-button {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 14px;
     }
 }
