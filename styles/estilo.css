@@ -279,28 +279,34 @@ nav {
     transition: background-color 0.3s;
 }
 
-/* Rodapé
+/* Garante que o body ocupe toda a altura da tela */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* O conteúdo principal da página ocupa o espaço disponível */
+main {
+  flex: 1;
+}
+
+/* Rodapé fixado no final */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: #333; /* Cor de fundo */
   color: white; /* Cor do texto */
   text-align: center;
-  padding: 10px 0; /* Espaçamento interno */
-  font-size: 14px; /* Tamanho da fonte */
-  z-index: 1000; /* Garante que o rodapé fique sobre outros elementos */
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
+  padding: 10px 0;
+  width: 100%; /* Largura total */
+  position: relative; /* Responsivo (não overlay) */
+  margin-top: auto; /* Empurra o rodapé para o final */
 }
 
-/* Responsividade */
+/* Ajusta a responsividade */
 @media (max-width: 768px) {
-  footer {
-    font-size: 12px; /* Reduz o tamanho da fonte em telas menores */
-    padding: 8px 0;
+  footer p {
+    font-size: 14px;
   }
 }
 
