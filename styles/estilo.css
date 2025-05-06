@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-body{
-background-color: #52D9DB;
-}
-
 /* Body geral */
 body {
     font-family: Arial, sans-serif;
@@ -371,34 +367,6 @@ footer {
     padding: 0; /* Remove espaçamento */
 }
 
-/* Centraliza o áudio no meio da página */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.container {
-  text-align: center;
-}
-
-/* Botões arredondados */
-.rounded-button {
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px; /* Torna as bordas arredondadas */
-  cursor: pointer;
-  font-size: 16px;
-  margin: 10px;
-  transition: background-color 0.3s;
-}
-
-.rounded-button:hover {
-  background-color: #0056b3; /* Cor ao passar o mouse */
+.audio{
+align-items: center;
 }
