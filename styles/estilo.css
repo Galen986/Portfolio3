@@ -1,69 +1,46 @@
 /* Reset e responsividade global */
 *, *::before, *::after {
-    box-sizing: border-box; /* Define o box-sizing para cálculo correto de margens e padding */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove espaçamento */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    display: flex;
-    flex-direction: column; /* Alinha em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    min-height: 100vh; /* Altura mínima da página */
-    background-color: #52D9DB; /* Cor de fundo */
-    color: #333; /* Cor do texto */
-}
-
-/* Centraliza conteúdo principal */
-main {
-    flex: 1;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #52D9DB; /* Cor igual ao fundo */
-    color: black; /* Letras pretas */
+    min-height: 100vh;
+    background-color: #52D9DB;
+    color: #333;
     text-align: center;
-    padding: 20px;
+}
+
+/* Cabeçalhos */
+header h1, header h2 {
+    margin: 10px 0;
+}
+
+/* Imagem */
+.img {
     width: 100%;
-    margin-top: 50px;
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 20px 0;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    footer p {
-        font-size: 14px;
-    }
-}
-
-/* Botões centralizados */
-.button-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebra em linhas em telas menores */
-    justify-content: center;
-    gap: 10px; /* Espaçamento entre botões */
-}
-
-/* Estilo dos botões */
+/* Botões */
 .link-button {
     display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #007BFF;
     padding: 10px 20px;
+    margin: 10px;
     border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .link-button:hover {
@@ -71,31 +48,35 @@ footer {
     transform: scale(1.05);
 }
 
-.link-button:active {
-    background-color: #003f7f;
-    transform: scale(0.95);
-}
-
-/* Centralizar áudio */
-.audio {
-    width: clamp(200px, 50%, 600px);
-    margin: 20px auto;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Mapas */
-.map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Rodapé */
+footer {
+    background-color: #52D9DB;
+    color: black;
+    padding: 20px;
     width: 100%;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
-.map-container iframe {
-    width: 80%;
-    height: auto;
-    border: none;
-    border-radius: 8px;
+/* Botões centralizados */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .img, .map-container iframe {
+        width: 90%;
+    }
+
+    .link-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
