@@ -1,91 +1,91 @@
 /* Reset e responsividade global */
 *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Define o modelo de caixa para um cálculo consistente */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
 }
 
 /* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #52D9DB;
-    color: #333;
-    text-align: center;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    display: flex; /* Ativa o modelo flexbox */
+    flex-direction: column; /* Define os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    min-height: 100vh; /* Define a altura mínima como a altura da janela */
+    background-color: #52D9DB; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    box-sizing: border-box; /* Adiciona um modelo de caixa consistente */
 }
 
 /* Cabeçalhos */
 header h1, header h2 {
-    margin: 10px 0;
+    margin: 10px 0; /* Adiciona espaçamento vertical entre os cabeçalhos */
 }
 
 /* Imagem */
 .img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
-    margin: 20px 0;
+    width: 100%; /* Faz a imagem ocupar 100% do contêiner no máximo */
+    max-width: 600px; /* Define o tamanho máximo da largura */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px 0; /* Espaçamento vertical ao redor da imagem */
 }
 
 /* Botões */
 .link-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Coloca os botões em linha, respeitando margens */
+    padding: 10px 20px; /* Define o espaçamento interno do botão */
+    margin: 10px; /* Espaçamento ao redor do botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho do texto */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave ao passar o mouse */
 }
 
 .link-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
 }
-
 
 /* Botões centralizados */
 .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    display: flex; /* Ativa o modelo flexbox */
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha, se necessário */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .img, .map-container iframe {
-        width: 90%;
+        width: 90%; /* Reduz o tamanho da imagem/iframe em dispositivos menores */
     }
 
     .link-button {
-        font-size: 14px;
-        padding: 8px 16px;
+        font-size: 14px; /* Reduz o tamanho do texto do botão */
+        padding: 8px 16px; /* Ajusta o espaçamento interno do botão */
     }
 
     footer {
-        font-size: 14px;
+        font-size: 14px; /* Reduz o tamanho da fonte do rodapé */
     }
 }
 
-
 /* Principal (conteúdo) */
 main {
-    flex: 1; /* Expande o conteúdo para ocupar o espaço disponível */
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
 }
 
 /* Rodapé */
-footer {  /*rodapé */
-text-align: center; 
-color: black;
-font-family: "Montserrat", sans-serif;
-font-weight: 400;
-font-size: 0.875rem;
-padding: 12px; /*distancia entre a palavra e o fundo */
+footer {
+    text-align: center; /* Centraliza o texto no rodapé */
+    color: black; /* Define a cor do texto */
+    font-family: "Montserrat", sans-serif; /* Fonte do texto */
+    font-weight: 400; /* Define o peso da fonte */
+    font-size: 0.875rem; /* Tamanho da fonte */
+    padding: 12px; /* Espaçamento interno do rodapé */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    margin-top: auto; /* Empurra o rodapé para o final da página */
 }
