@@ -73,6 +73,7 @@ header h2 {
 /* Principal (conteúdo) */
 main {
     flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+     flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */ 
 }
 
 /* Rodapé */
