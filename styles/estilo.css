@@ -15,6 +15,7 @@ body {
     background-color: #52D9DB;
     color: #333;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Cabeçalhos */
