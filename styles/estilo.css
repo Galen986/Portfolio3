@@ -70,11 +70,6 @@ header h2 {
         padding: 8px 16px; /* Ajusta o espaçamento interno do botão */
     }
 
-    footer {
-        font-size: 14px; /* Reduz o tamanho da fonte do rodapé */
-    }
-}
-
 /* Principal (conteúdo) */
 main {
     flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
