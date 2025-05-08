@@ -74,15 +74,6 @@ header h1, header h2 {
     }
 }
 
-/* Corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Altura mínima igual à altura da janela */
-    margin: 0; /* Remove margens extras */
-    background-color: #52D9DB; /* Cor de fundo do corpo */
-}
 
 /* Principal (conteúdo) */
 main {
