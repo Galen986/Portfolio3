@@ -48,14 +48,6 @@ header h1, header h2 {
     transform: scale(1.05);
 }
 
-/* Rodapé */
-footer {
-    background-color: #52D9DB;
-    color: black;
-    padding: 20px;
-    width: 100%;
-    margin-top: 20px;
-}
 
 /* Botões centralizados */
 .button-container {
