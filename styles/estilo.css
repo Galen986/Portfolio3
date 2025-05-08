@@ -86,4 +86,8 @@ footer {
     padding: 12px; /* Espaçamento interno do rodapé */
     width: 100%; /* Garante que o rodapé ocupe toda a largura */
     margin-top: auto; /* Empurra o rodapé para o final da página */
+
+     flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+     flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */ 
+}
 }
